@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+nav {
+  background-color: rgb(193, 243, 193);
+}
+
+.fotoLogo {
+  height: 140px;
+  width: 140px;
+  float: left;
+}
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.containerBuscador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buscador {
+  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  padding-left: 16px;
+  border-radius: 4px;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--search-bg);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 20px 0 40px;
+}
+
+.carrito {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.carritoSpan {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.biLogo {
+  font-size: 40px;
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+.containerCard {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  height: 320px;
+}
+.cardPrincipal {
+  display: flexbox;
+  margin: 6px;
+  padding: 3px;
+  text-align: center;
+  width: 230px;
+  height: 280px;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.card-img-top {
+  height: 50px;
+}
+
+button {
+  font-size: 15px;
+  width: 100px;
+  padding: 3px;
+  border-radius: 5px;
+}
+button,
+button:not(:hover) {
+  background-color: rgb(0, 172, 0);
+  border-color: rgb(97, 245, 92);
+}
+
+button:hover {
+  background-color: rgb(105, 252, 171);
+  color: rgb(0, 172, 0);
+}
+
+button:active {
+  background-color: rgb(9, 190, 245);
+  color: rgb(135, 6, 240);
+  border-color: rgb(9, 107, 187);
+}
+
+.botonVolverCompra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 0;
+  background-color: rgb(193, 243, 193);
+}
