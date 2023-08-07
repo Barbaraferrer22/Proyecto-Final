@@ -3,7 +3,7 @@ const arrayProductos = [];
 const carritoProtuctos =
   JSON.parse(localStorage.getItem("CarritoProductos")) || [];
 
-function retornarCardHTML() {
+function retornarCardHTML(producto) {
   return ` 
   <div class="cardPrincipal">
     <div class="card" style="width: 10rem">

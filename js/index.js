@@ -21,6 +21,11 @@ function activarClickEnBotones() {
         JSON.stringify(carritoProtuctos)
       );
       mostrarTotalProductos();
+      Toastify({
+        text: "Se agregó el producto al Carrito",
+        duration: 3000,
+        position: "center",
+      }).showToast();
     });
   });
 }
@@ -32,8 +37,6 @@ function cargarProductos(array) {
   });
   activarClickEnBotones();
 }
-
-cargarProductos(arrayProductos);
 
 inputSearch.addEventListener("search", () => {
   localStorage.setItem("ultimaBusqueda", inputSearch.value);

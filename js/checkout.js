@@ -1,5 +1,6 @@
 const tableBody = document.querySelector("tbody");
 const sectionProductos = document.querySelector("section");
+const botonComprar = document.querySelector("button.botonComprar");
 
 function listarCarritoHTML(producto) {
   return `<tr>
@@ -38,3 +39,20 @@ function eliminarProducto(id) {
 }
 
 armarCarrito();
+
+botonComprar.addEventListener("click", () => {
+  Swal.fire({
+    title: "¿Confirmas la compra Plantilover?",
+    icon: "question",
+    showDenyButton: true,
+    confirmButtonText: "CONFIRMAR",
+    denyButtonText: "CANCELAR",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      localStorage.removeItem("carritoProtuctos");
+      carritoProtuctos.length = 0;
+      Swal.fire("Muchas gracias por su compra Plantilover 🍀", "", "success");
+      sectionProductos.innerHTML = mostrarMensajeCV();
+    }
+  });
+});
